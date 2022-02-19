@@ -1,0 +1,223 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Mono Space", monospace;
+  background-color: hsl(185, 41%, 84%);
+  margin: 0;
+}
+
+/* GENERAL */
+.flex-wrap {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+p {
+  font-size: 2.4rem;
+  font-family: inherit;
+  color: hsl(184, 14%, 56%);
+  margin-bottom: 1rem;
+}
+
+.input-1::-webkit-inner-spin-button,
+.input-2::-webkit-inner-spin-button {
+  display: none;
+  margin: 0;
+}
+
+.input-2::-webkit-input-placeholder {
+  color: hsl(183, 100%, 15%);
+}
+
+/*  */
+.container {
+  height: 100vh;
+  max-width: 144rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+/* Header */
+
+.header {
+  color: hsl(186, 14%, 43%);
+  font-weight: 400;
+  letter-spacing: 10px;
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+  max-width: 12ch;
+  word-break: break-all;
+}
+
+/* */
+
+/* Calculator Body */
+
+.calc-body {
+  background-color: hsl(0, 0%, 100%);
+  display: flex;
+  flex-direction: row;
+  border-radius: 20px;
+  padding: 2.4rem 2.4rem;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: auto;
+}
+
+/* Inputs */
+.input-1 {
+  background-color: hsl(189, 41%, 97%);
+  color: hsl(183, 100%, 15%);
+  border-radius: 5px;
+  border: none;
+  font-size: 2.4rem;
+  padding: 0.6rem 1.2rem;
+  font-family: inherit;
+  font-weight: 700;
+  text-align: right;
+}
+
+.input-1:focus {
+  outline: 2px solid hsl(172, 67%, 45%);
+  border: none;
+  text-align: right;
+}
+
+.calc-bill,
+.select-tip {
+  padding-bottom: 1.8rem;
+  width: 100%;
+}
+
+.btn-tip-amount,
+.btn-tip-amount:active {
+  background-color: hsl(183, 100%, 15%);
+  border-radius: 5px;
+  height: 4rem;
+  width: 100%;
+  color: hsl(0, 0%, 100%);
+  border: none;
+  font-weight: 700;
+  font-family: inherit;
+  font-size: 1.8rem;
+}
+
+.btn-tip-amount:hover {
+  background-color: hsl(172, 67%, 45%);
+  cursor: pointer;
+  transition: all 0.3s;
+  color: hsl(183, 100%, 15%);
+}
+
+.active-btn {
+  background-color: hsl(172, 67%, 45%);
+  color: hsl(183, 100%, 15%);
+  cursor: pointer;
+  transition: all 0.3s;
+  border-radius: 5px;
+  border: none;
+  font-weight: 700;
+  font-family: inherit;
+  font-size: 1.8rem;
+}
+
+#numPeople {
+  background: url("./images/icon-person.svg") no-repeat 0.5em center;
+}
+
+#bill {
+  background: url("./images/icon-dollar.svg") no-repeat 0.5em center;
+}
+
+.input-2 {
+  background-color: hsl(185, 41%, 84%);
+  color: hsl(183, 100%, 15%);
+  border-radius: 5px;
+  border: none;
+  font-family: inherit;
+  padding: 0 1rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-align: center;
+  width: 77.5px;
+}
+
+.input-2-focus,
+.input-2:active {
+  outline: 2px solid hsl(172, 67%, 45%);
+}
+/*  */
+
+/* Results */
+.tip-result {
+  background-color: hsl(183, 100%, 15%);
+  border-radius: 12px;
+  color: hsl(0, 0%, 100%);
+  font-size: 2.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 3rem 1.8rem;
+}
+
+.tip-per-person,
+.total-per-person {
+  font-size: 3.4rem;
+  color: hsl(172, 67%, 45%);
+  font-weight: 700;
+}
+
+.calc-tip p,
+.calc-total p {
+  color: hsl(0, 0%, 100%);
+}
+
+.person {
+  color: hsl(186, 14%, 43%);
+  font-size: 1.6rem;
+}
+
+.calc-tip,
+.calc-total {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.calc-tip {
+  gap: 5rem;
+}
+
+.buttons {
+  margin-top: auto;
+}
+
+.btn {
+  background-color: hsl(186, 14%, 43%);
+  color: hsl(172, 67%, 45%);
+  border-radius: 5px;
+  height: 4rem;
+  width: 100%;
+  color: hsl(185, 41%, 84%);
+  border: none;
+  font-weight: 700;
+  transition: all 0.3s;
+}
+
+.btn:active,
+.btn:hover {
+  background-color: hsl(172, 67%, 45%);
+  color: hsl(183, 100%, 15%);
+  cursor: pointer;
+}
+
+/*  */
